@@ -6,36 +6,16 @@
 1 -> нет 
 */
 
-Console.WriteLine("enter the number of the day of the week");
+Console.WriteLine("enter the number");
 int day = int.Parse(Console.ReadLine());
 
-if (day == 1)
+if (day > 0 & day < 6)
 {
-    Console.WriteLine("Monday, no");
+    Console.WriteLine("No");
 }
-if (day == 2)
+if (day == 6 | day == 7)
 {
-    Console.WriteLine("Tuesday, no");
-}
-if (day == 3)
-{
-    Console.WriteLine("Wednesday, no");
-}
-if (day == 4)
-{
-    Console.WriteLine("Thursday, no");
-}
-if (day == 5)
-{
-    Console.WriteLine("Friday, no");
-}
-if (day == 6)
-{
-    Console.WriteLine("Saturday, yes");
-}
-if (day == 7)
-{
-    Console.WriteLine("Sunday, yes");
+    Console.WriteLine("Yes");
 }
 if (day < 1 | day > 7)
 {
