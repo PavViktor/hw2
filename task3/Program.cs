@@ -9,15 +9,15 @@
 Console.WriteLine("enter the number");
 int day = int.Parse(Console.ReadLine());
 
-if (day > 0 & day < 6)
+if (day > 0 && day < 6)
 {
     Console.WriteLine("No");
 }
-if (day == 6 | day == 7)
+if (day == 6 || day == 7)
 {
     Console.WriteLine("Yes");
 }
-if (day < 1 | day > 7)
+if (day < 1 || day > 7)
 {
     Console.WriteLine("invalid value");
 }
