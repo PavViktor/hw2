@@ -7,7 +7,13 @@
 Console.WriteLine("enter the number");
 int num = int.Parse(Console.ReadLine());
 
-if (num >= 100)
+if (num > 99)
 {
-    int num == num / 10;
+    num = num / 10;
+    num = num % 10;
 }
+else
+{
+    num = num % 10;
+}
+Console.WriteLine(num);
